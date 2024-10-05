@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #23253A;
+}
+.p{
+    font-size: 17px;
+    color: white;
+    word-spacing: 4px;
+    
+    
+}
+h3{
+    color: whitesmoke;
+}
+#mainhead{
+    margin: 10px;
+    display: flex;
+    background-color: #212437;
+    align-items: center;
+    
+}
+.head{
+    color: white;
+    padding-left: 90px;
+    padding-top: 10px;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.headnav{
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 550px;
+   word-spacing: 60px;
+   padding-bottom: 7px;
+   
+}
+.nav{
+    text-decoration: none;
+    color: orange;
+    font-size: 16px;
+}
+
+.myintro{
+    margin: 100px 0px 0px 120px;
+    font-size: 24px;
+}
+.hire-me{
+    background-color: #F54751;
+    padding: 10px 50px 10px 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+/* Progress bar  */
+
+.progress-container {
+    position: fixed;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightcoral;
+}
+
+.circle.top {
+    background-color: red;
+}
+
+.line {
+    width: 4px;
+    background-color: lightcoral;
+    transition: height 0.2s;
+}
+
+.first-line {
+    height: 50px;
+}
+
+.second-line {
+    height: 50px;
+}
+
+.circle.middle {
+    background-color: transparent;
+    border: 2px solid lightcoral;
+}
+
+.circle.bottom {
+    background-color: transparent;
+    border: 2px solid lightcoral;
+}
+
+
+/* Services */
+#main-services{
+    margin: 270px 0px 0px 140px;
+
+}
+.skill-sets{
+    display: flex;
+    column-gap: 60px;
+    flex-wrap: wrap;
+
+
+}
+.skill-box{
+    margin-top: 30px;
+    padding: 10px 20px 20px 20px;
+    background-color:#2B2E41 ;
+    width: 25%;
+    /* text-align: justify; */
+}
+#connect{
+    margin: 170px 0px 0px 140px;
+    column-gap: 30px;
+}
+.input-container{
+    position: relative;
+    
+}
+.input{
+    padding: 10px 10px 0px 10px;
+    width: 35%;
+    height: 60px;
+    margin-bottom: 40px;
+    background-color: #F54751;
+
+    outline: none;
+    font-size: 19px;
+    border: 3px solid #F54751;
+}
+label{
+    font-size: 26px;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    padding: 0px 5px;
+    transition: all 0.3s;
+    pointer-events: none;
+    color: white;
+
+}
+.input:focus + label{
+    top: -15px;
+    color: white;
+    
+}
+.lastbutton{
+    background-color: #F54751;
+    padding: 10px 30px 10px 30px;
+    margin-left: 13%;
+    font-size: 23px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div id="mainhead">
+        <div class="head">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="headnav">
+            <a href="#intro-section" class="nav">Home</a>
+            <a href="#main-services"class="nav" >Services</a>
+            <a href="#intro-section" class="nav">About</a>
+            <a href="#main-services" class="nav">Skills</a>
+            <a href="#connect"class="nav">Contact</a>
+        </div>
+     </div>
+
+     <!-- Intro Section -->
+
+     <div id="intro-section">
+        <div class="myintro">
+            <h1 style="color: #F54751;">Hello, I am a<br>
+                Front end Developer</h1><br>
+                <p style="width: 40%; text-align: justify; color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nam culpa nulla numquam consequuntur explicabo dolorum sint optio? Obcaecati accusamus deleniti dolore odit culpa itaque quos veritatis exercitationem eum maxime?</p><br>
+                <button type="button" class="hire-me">Hire me</button>
+        </div>
+     <!-- Progressbar -->
+     <div class="progress-container">
+        <div class="circle top"></div>
+        <div class="line first-line"></div>
+        <div class="circle middle"></div>
+        <div class="line second-line"></div>
+        <div class="circle bottom"></div>
+    </div>
+    
+</div>
+
+    <!-- Services -->
+     <div id="main-services">
+        <h3 style="color: white;">Services</h3>
+        <h1 style="color:#F03C64; font-size:50px;"><u>Skill</u>-Set</h1>
+        <div class="skill-sets">
+            <div class="skill-box"><i class="fa-solid fa-globe" style="font-size: 25px; color: #F03C64; border-radius: 30px;"></i><br><br>
+            <h3 style="font-size: 30px; padding-bottom: 10px;">Web Development</h3>
+
+            <p class="p">As you know I have some set of skill that i can use to build websites. Although right now I cant say I am a full fleged Web developer but 1 day I will be one</p>
+            
+            
+            </div>
+            <div class="skill-box"><i class="fa-solid fa-gamepad" style="font-size: 25px; color: #F03C64; border-radius: 50%;"></i><br><br>
+                <h3 style="font-size: 30px; padding-bottom: 10px;">Gaming</h3>
+                <p class="p">I Like video games and I had played lot of games like Assacians Creed Series, Dark Soul series, Valorant, CSGO, GTA Series, Simulator Games and many more.</p>
+
+            </div>
+            <div class="skill-box">
+                <i class="fa-regular fa-futbol" style="font-size: 25px; color: #F03C64; border-radius: 50%;"></i><br><br>
+                <h3 style="font-size: 30px; padding-bottom: 10px;">Football</h3>
+                <p class="p">I love to play football and also loves to watch leauges and International championships related to football. I am a decent football player.</p>
+                
+            </div>
+            <div class="skill-box"><i class="fa-solid fa-desktop" style="font-size: 25px; color: #F03C64; border-radius: 50%;"></i><br><br>
+                <h3 style="font-size: 30px; padding-bottom: 5px;">Computer Operator</h3>
+                <p class="p">I have a decent knowledge about how computer works and I can also use Microsoft Office package properly. I can make document, presentation,spreadsheet and more.</p>
+
+            </div>
+            <div class="skill-box"><i class="fa-solid fa-utensils"style="font-size: 25px; color: #F03C64; border-radius: 50%;"></i><br><br>
+                <h3 style="font-size: 30px; padding-bottom: 5px;">Cooking</h3>
+            <p class="p">
+                I am very good at cooking, I can say it in a very confident way that I can cook many varietes of foods. I self learn the art of cooking. I can make your mouth drool by the smell of my cooking. 
+            </p>
+            </div>
+            <div class="skill-box"><i class="fa-solid fa-chess"style="font-size: 25px; color: #F03C64; border-radius: 50%;"></i><br><br>
+                <h3 style="font-size: 30px; padding-bottom: 5px;">Chess</h3>
+                <p class="p">If you ask me "Is there is anything that you are so confident that you can beat your opponent" then i would most likely say Chess. I am good at playing chess and its not a drill. </p>
+            
+            
+            </div>
+
+        </div>
+
+     </div>
+     <!-- Contact Me -->
+     <div id="connect">
+        <h1 style="font-size: 40px; color: gray;" >Connect With Me</h1><br>
+
+        <form class="form">
+            <div class="input-container">
+        
+        <input type="text" name="Name"  class="input">
+        <label for="Name">Name</label>
+
+        <div class="input-container">
+        
+            <input type="text" name="Massage"  class="input">
+            <label for="Massage">Massage</label>
+
+        
+        </div>
+        <button type="button" class="lastbutton"> Stay Connected <i class="fa-solid fa-location-arrow" style="padding-left: 9px; font-size: 23px;"></i> </button>
+
+    </form>
+
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+    let scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    let progressHeightTop = Math.min(scrolled * 2 * 50, 50);  // Top line height stops at 50px
+    let progressHeightBottom = Math.max((scrolled - 0.5) * 2 * 50, 0); // Bottom line starts growing after 50%
+    
+    // Update the height of the top line (first part)
+    document.querySelector('.first-line').style.height = `${progressHeightTop}px`;
+
+    // Update the height of the bottom line (second part)
+    document.querySelector('.second-line').style.height = `${progressHeightBottom}px`;
+
+    // Change the color of the middle circle when scrolled to 50%
+    if (scrolled >= 0.5) {
+        document.querySelector('.circle.middle').style.backgroundColor = 'red';
+    } else {
+        document.querySelector('.circle.middle').style.backgroundColor = 'transparent';
+    }
+
+    // Change the color of the bottom circle when scrolled to the bottom
+    if (scrolled >= 1) {
+        document.querySelector('.circle.bottom').style.backgroundColor = 'red';
+    } else {
+        document.querySelector('.circle.bottom').style.backgroundColor = 'transparent';
+    }
+});
+
+  
+
+    </script>
+
+</body>
+</html>
